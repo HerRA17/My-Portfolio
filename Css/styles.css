@@ -9,7 +9,7 @@ body {
     font-family: 'Kanit', sans-serif;
     font-weight: bold;
     font-size: 15px;
-    line-height:15px;
+    line-height:20px;
     margin-left: 15px;
 }
 
@@ -45,6 +45,8 @@ display: grid;
 .page-header_item {
     border-radius: 20px;
     flex: 0 1 200px;
+    max-width: 200px;
+    height: auto;
 }
 
 .page-header_item:last-child {
@@ -169,11 +171,6 @@ footer > p {
 }
 
 /* About Page */
-/* #container {
-min-height: 50vh;
-display:grid;
-place-content: center;
-}  can help to center the table*/
 
 .table {
 margin: auto;
@@ -218,19 +215,29 @@ margin: auto;
  }
 
 #img-Mexico {
+    display: flex;
     margin: 20px auto;
-    width: 45%;
+    width: 60%;
     height: auto;
     position: relative;
 }
 
 .img-Mexico {
-   display:block;
-    animation: mexico 6s infinite ;
+   min-width: 90%;
+   place-content: center;
+   animation: mexico 6s infinite ;
    margin: 0 auto;
 }
 
 /* Contact Page */
+#form{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    width: 55%;
+    justify-content: end;
+}
+
 .email-form {
     margin: 10px 0px;
 }
@@ -245,8 +252,6 @@ margin: auto;
     justify-content: center;
     flex-flow: row wrap;
 }
-
-
 
 #visitors-message-button {
     margin: 10px 0px;
@@ -280,6 +285,10 @@ margin: auto;
     text-decoration: overline dashed #dda;
 }
 
+::placeholder{
+color:#f5f5f5;
+}
+
 /* Work Page */
  .section-header {
 text-align:center;
@@ -311,7 +320,7 @@ text-align:center;
 
  /* Device Screen */
  
- @media screen and (max-width: 360px) {
+ @media screen and (max-width: 365px) {
 
  /*Navigation-bar */
  .page-header {
@@ -382,6 +391,11 @@ text-align:center;
     line-height: 20px;
 }
 
+.portrait {
+    min-width: 145px;
+    max-width: 190px;
+}
+
 .check-code {
     color: #007e77;
 }
@@ -418,7 +432,7 @@ font-size: 25px;
 
 /*Contact */
 #form {
-    display: flex;
+    display: grid;
     justify-content: center;
     margin: 0px auto;
 }
@@ -500,6 +514,8 @@ font-size: 25px;
 .portrait {
     display:inline-flex;
     align-content:space-between;
+    max-width: 215px;
+    min-width: 130px;
 }
 
 .profile-text {
@@ -512,6 +528,20 @@ font-size: 25px;
     align-content: center;
     color: #007e77;
 }
+
+/* About me*/
+#img-Mexico {
+    display: flex;
+    margin: 0px auto;
+    min-width: 50%;
+    position: relative;
+}
+ .img-Mexico {
+    min-width: 100%;
+    min-height: auto;
+    display:grid;
+    place-content: center;
+} 
 
 /* Work page*/
 .grid-container {
@@ -591,6 +621,7 @@ font-size: 30px;
 .portrait {
     display:inline-flex;
     align-content:space-between;
+    max-width: 250px;
 }
 
 .profile-text {
@@ -609,6 +640,19 @@ font-size: 30px;
     margin: auto;
     position: center;
 }
+
+#img-Mexico {
+    display: flex;
+    margin: 0px auto;
+    min-width: 50%;
+    position: relative;
+}
+ .img-Mexico {
+    min-width: 100%;
+    min-height: auto;
+    display:grid;
+    place-content: center;
+} 
 
 /* Work page*/
 .grid-container {
