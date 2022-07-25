@@ -214,7 +214,8 @@ margin: auto;
     color:#dda;
  }
 
-#img-Mexico {
+
+ #img-Mexico {
     display: flex;
     margin: 20px auto;
     width: 60%;
@@ -429,7 +430,7 @@ font-size: 25px;
 }
  .img-Mexico {
     min-width: 45%;
-    min-height: 50vh;
+    min-height: auto; 
     display:grid;
     place-content: center;
 } 
