@@ -9,7 +9,7 @@ body {
     font-family: 'Kanit', sans-serif;
     font-weight: bold;
     font-size: 20px;
-    line-height:20px;
+    line-height:30px;
     margin-left: 15px;
 }
 
@@ -330,6 +330,7 @@ text-align:center;
 /*Body*/
 body{
     font-size: 12px;
+    line-height: 20px;
 }    
 
  /*Navigation-bar */
@@ -438,7 +439,7 @@ font-size: 25px;
 /*Contact */
 #form {
     display: grid;
-    justify-content: center;
+    justify-items: center;
     grid-gap: 1px;
 }
 
