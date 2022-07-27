@@ -329,7 +329,7 @@ text-align:center;
 /*Body*/
 body{
     font-size: 15px !important;
-    line-height: 20px!important;
+    line-height: 20px !important;
 }    
 
  /*Navigation-bar */
@@ -440,7 +440,6 @@ font-size: 25px;
 #form {
     display: grid;
     justify-content: center;
-    grid-gap: 1px;
 }
 
  
