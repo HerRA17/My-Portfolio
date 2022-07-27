@@ -147,7 +147,7 @@ footer > p {
     flex-flow: row wrap;
     align-content: space-evenly;
     justify-content: space-evenly;
-    width: 90%;
+    width: 95%;
 }
 
 .portrait {
@@ -235,8 +235,7 @@ margin: auto;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto auto;
-    width: 55%;
-    justify-content: end;
+    justify-content: center;
 }
 
 .email-form {
@@ -329,8 +328,8 @@ text-align:center;
 
 /*Body*/
 body{
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 15px !important;
+    line-height: 20px!important;
 }    
 
  /*Navigation-bar */
@@ -399,8 +398,9 @@ body{
 
 .portrait {
     min-width: 145px;
-    max-width: 180px;
+    max-width: 160px!important;
 }
+
 
 .check-code {
     color: #007e77;
@@ -439,7 +439,7 @@ font-size: 25px;
 /*Contact */
 #form {
     display: grid;
-    justify-items: center;
+    justify-content: center;
     grid-gap: 1px;
 }
 
