@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head> 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png"> 
@@ -11,7 +11,6 @@
     </head>
     <body>
     <header class="page-header">
-        <img class="page-header_item" src="img/IMG_3583.JPG" alt="logo" width="150">
         <nav class="main-navigation page-header_item"> 
             <ul role="menubar" class="navigation-list"> 
                 <li role="menuitem"> 
@@ -30,41 +29,69 @@
         </nav>
     </header>
     <main>
-     <h1 class="section-header">Work</h1> 
-        <div class="grid-container"> 
-            <div class="grid-item">Pokédex 
-                <p>Small web application that loads data from external API (Pokemons from an external source).
+     <h1 class="section-header">Work</h1> <!-- Modals for the projects might be better aesthetically-->
+            <div class="grid-container"> 
+            <div class="grid-item" id="pokedex">
+                <h2 class="project-titel">Pokédex</h3> 
+                <p class="project-p">Small web application that loads data from external API (Pokemons from an external source).
                      Additionally enables viewing loaded data items in detail (height, weight, types).
-                    About 150 pokemons available.</p>
+                    About 150 pokemons available.
+                </p>
+                <br>
+                <img src="img/pokedeks_preview.png" id="work-img">
+                <br>
                 <a href="https://herra17.github.io/Pokedex_App/" class="link-Example">Pokédex</a>
             </div>
-            <div class="grid-item">To do list 
-                <p>As the names mentions, a to do list app, which allows user to insert data, cross off and remove it.</p>
+            <div class="grid-item" id="to-do-list">
+                <h2 class="project-titel">To do list</h3> 
+                <p class="project-p">Self explanatory by the name,the to do list app allows user to insert data, cross off and remove it.
+                </p>
+                <br>
+                <img src="img/Todo-list_preview.png" id="work-img">
+                <br>
                 <a href="https://herra17.github.io/to-do-list-app/" class="link-Example">To do list</a>
             </div>
-            <div class="grid-item">Movies-couch_api Server Side 
-                <p>The Server component of a "movies" web application. The web application will provide users with access
+            <div class="grid-item" id="movies-couch_api">
+                <h2 class="project-titel">Movies-couch_api Server Side</h3> 
+                <p class="project-p">The Server component of a "movies" web application. The web application will provide users with access
                     to information about different movies, directors, and genres. Users will be able to sign up, update 
-                    their personal information, and create a list of their favorite movies, and deregister.</p>
+                    their personal information, and create a list of their favorite movies, and deregister.
+                </p>
+                <br>
+                <img src="">
+                <br>
                 <a href="https://herra17.github.io/Movies-Couch-api" class="link-Example">Movies-Couch-api</a>
             </div>
-            <div class="grid-item">Movies-Couch client side 
-                <p> Client side part of the Application "Movies-Couch", where the user will be able to initially sign up or login.
-                    Brows the different Movies the app displays. Additionally the user will be able to add his favorite movies 
-                    to a list. User will have available a Userpage where he can see his information, edit & delete/deregister 
-                    from the app.</p>
+            <div class="grid-item" id="movies-couch">
+                <h2 class="project-titel">Movies-Couch client side</h3> 
+                <p class="project-p"> Client side part of the Application "Movies-Couch", where the user will be able to initially sign up or login.
+                Brows the different Movies the app displays. Additionally the user will be able to add his favorite movies 
+                to a list. User will have available a Userpage where he can see his information, edit & delete/deregister 
+                from the app.
+                </p>
+                <br>
+                <img src="img/movies-couch_preview.png" id="work-img">
+                <br>
                 <a href="https://herra17.github.io/Movies-Couch_client" class="link-Example">Movies-Couch_client</a>
             </div>
-            <div class="grid-item">meet 
-                <p>A serverless app (meet) where users will be able to look up events in specific locations,.
+            <div class="grid-item" id="meet">
+                <h2 class="project-titel">meet </h3>
+                <p class="project-p">A serverless app (meet) where users will be able to look up events in specific locations,.
                     The events will be displyed based on the date and ... 
                 </p>
+                <br>
+                <img src="img/meet-preview.png" id="work-img">
+                <br>
                 <a href="https://herra17.github.io/meet" class="link-Example">meet</a>
             </div>
-            <div class="grid-item">Future Example 6 
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla nunc vel feugiat lobortis.
-                    Cras facilisis risus vel nisl pulvinar, vel faucibus elit volutpat.
-                    Suspendisse ut urna a libero aliquam rhoncus. </p>
+            <div class="grid-item">
+                <h2 class="project-titel">Future Example 6</h3> 
+                <p class="project-p"> ... 
+
+                </p>
+                <br>
+                <img src="">
+                <br>
                 <a href="#" class="link-Example">Coming Soon!</a>
             </div>
         </div>
@@ -74,10 +101,10 @@
         <p>Find me on!</p>
         <div class="social-media">
             <a href="https://github.com/HerRA17">
-             <img class="github-icon" src="img/github-svgrepo-com.svg" alt="Github" width="32" height="32">
+             <img class="github-icon" src="img/github-svgrepo-com.svg" alt="Github" width="42" height="auto">
             </a>
             <a href="https://www.linkedin.com/in/hermann-gustav-rasch-6118b1b9/">
-             <img class="linkedin-icon" src="img/linkedin-svgrepo-com.svg" alt="Linkedin" width="32" height="32">
+             <img class="linkedin-icon" src="img/linkedin-svgrepo-com.svg" alt="Linkedin" width="42" height="auto">
             </a>
             </div>
     </footer>
