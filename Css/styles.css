@@ -168,9 +168,9 @@ margin: auto;
 }
 
  thead , tbody , th , td  {
-    border:1px dotted #f5f5f5;
-    padding: 5px;
-    width: 25px;
+    border: 3px dotted #f5f5f5;
+    padding: 8px;
+    width: 40%;
 }
 
  
@@ -179,15 +179,20 @@ margin: auto;
  }
 
 .about-me-info {
-    align-items: center;
+    text-align: center;
 
 }
+
 .about-me_pic {
     border-radius: 30%;
     width: 250px;
     height: auto;
 }
 
+#icon-tech{
+    width: 40%;
+    height: auto;
+}
  #img-Mexico {
     display: flex;
     margin: 20px auto;
@@ -413,6 +418,9 @@ font-size: 25px;
     position: relative;
    
         
+}
+.about-me-info{
+    text-align: center;
 }
 .about-me_pic {
     border-radius: 30%;
