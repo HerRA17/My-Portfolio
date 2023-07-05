@@ -5,7 +5,7 @@
 
 body { 
     background-color: #007e77;
-    color: #f5f5f5;
+    color: #dda;
     font-family: 'Kanit', sans-serif;
     font-weight: bold;
     font-size: 20px;
@@ -53,7 +53,7 @@ display: grid;
     justify-content: space-evenly;
     justify-items: start;
     list-style-type: none;
-    color:#f7f7cd;
+    color:#dda;
 }
 
 .navigation-list li  {
@@ -100,6 +100,20 @@ display: grid;
     cursor:pointer;
 }
 
+.Hamburger-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #dda;
+}
 
 /* Footer */
 footer > p {
@@ -168,7 +182,7 @@ margin: auto;
 }
 
  thead , tbody , th , td  {
-    border: 3px dotted #f5f5f5;
+    border: 3px dotted #dda;
     padding: 8px;
     width: 40%;
 }
@@ -222,9 +236,9 @@ margin: auto;
 
 #visitors-message, #visitors-message-button , #visitors-email , #visitors-name {
     background-color: transparent;
-    color:#f5f5f5;
+    color:#dda;
     font-weight: bold;
-    border: 2px solid #f5f5f5;
+    border: 2px solid #dda;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -237,13 +251,13 @@ margin: auto;
 
 #visitors-message-button:hover, #visitors-message-button:focus {
     opacity: .7;
-    color:#C9BBCF;
-    border-color: #C9BBCF;
+    color:#dda;
+    border-color: #dda;
     cursor:pointer;
 }
 
 ::placeholder {
-    color:#f5f5f5
+    color: #dda;
 }
 
 .mail-to {
@@ -268,7 +282,7 @@ margin: auto;
 }
 
 ::placeholder{
-color:#f5f5f5;
+color:#dda;
 }
 
 /* Work Page */
@@ -288,17 +302,17 @@ color:#f5f5f5;
 }
  
  .grid-item {
-    border: #f7f7cd radius 10px;
+    border: #dda radius 10px;
     border-style: dashed;
     border-width: 1px;
-    color:#f5f5f5;
+    color:#dda;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-self: center;
 }
 .project-title{
-    align-self: center;
+    justify-content: center;
 }
 
 .project-p{
@@ -320,7 +334,18 @@ color:#f5f5f5;
 
  /* Device Screen */
  
- @media screen and (max-width: 365px) {
+ @media screen and (max-width: 395px) {
+
+/* Index */
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ }
+
+ @media screen and (max-width: 530px) {
 
 /*Body*/
 body{
@@ -380,9 +405,8 @@ body{
 
  /*Index */
  #profile {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     width: 100%;
     align-content: center;
@@ -456,7 +480,6 @@ font-size: 25px;
     flex-flow: row wrap;
     align-content: center;
     justify-content: center;
-    text-decoration: underline overline dashed;
  }  
 }
 
@@ -498,6 +521,32 @@ body{
     padding: 10px 0px;
     font-weight: bold;
     font-size: 1.5rem;
+}
+.Hamburger-menu{
+    display: block;
+}
+.Hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg)
+}
+.Hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.Hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg)
+}
+.navigation-list {
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.navigation-list.active{
+    left: 0;
 }
 
 /* Index page*/
@@ -577,10 +626,9 @@ font-size: 30px;
 }
 
 .page-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: normal; 
-    padding: 10px 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
 }
 
 .page-header_item {
@@ -603,9 +651,37 @@ font-size: 30px;
     display: grid;
     align-content: justify;
     text-align: justify;
-    padding: 10px 0px;
+    padding: 10px 2px;
+    margin: 5px 5px;
     font-weight: bold;
     font-size: 1.5rem;
+}
+
+.Hamburger-menu{
+    display: block;
+}
+.Hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg)
+}
+.Hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.Hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg)
+}
+.navigation-list {
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.navigation-list.active{
+    left: 0;
 }
 
  /*Index */
