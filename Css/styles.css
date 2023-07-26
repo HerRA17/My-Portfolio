@@ -203,10 +203,39 @@ margin: auto;
     height: auto;
 }
 
-#icon-tech{
-    width: 40%;
-    height: auto;
+.my-skills {
+    text-align: center;
 }
+.container-skills {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+#icon-tech{
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+
+.tech-stack {
+    text-align: center;
+}
+
+.table-grid{
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.techstack {
+margin: 10px 0px;
+}
+
  #img-Mexico {
     display: flex;
     margin: 20px auto;
@@ -319,7 +348,7 @@ color:#dda;
     align-self: center;
 }
  #work-img{
-    width: 55%;
+    width: 350px;
     height: auto;
     align-self: center;
  }
