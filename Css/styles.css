@@ -1,11 +1,10 @@
-
 * {
     box-sizing: border-box;
 }
 
 body { 
     background-color: #007e77;
-    color: #dda;
+    color: white;
     font-family: 'Kanit', sans-serif;
     font-weight: bold;
     font-size: 20px;
@@ -19,13 +18,9 @@ h1 {
     font-weight: bold;
 }
 
-span {
-    background-color: black;
-    color: yellow;
-}
 
 a {
-    color:#dda;
+    color:lightgray;
 }
 
 .grid {
@@ -53,7 +48,7 @@ display: grid;
     justify-content: space-evenly;
     justify-items: start;
     list-style-type: none;
-    color:#dda;
+    color:lightgray;
 }
 
 .navigation-list li  {
@@ -69,17 +64,6 @@ display: grid;
 
 .navigation-list a:active {
     text-decoration-line: overline;
-}
-
-.navigation-list a:before , .navigation-list a:after {
-    position:relative;
-    width: 2px;
-    height: 100%;
-    border: 2px solid #ABC9FF;
-    background: #ABC9FF;
-    content: "";
-    opacity: 0.5;
-    transition: all 0.4s;
 }
 
 .navigation-list a:before {
@@ -112,7 +96,7 @@ display: grid;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #dda;
+    background-color: lightgrey;
 }
 
 /* Footer */
@@ -182,18 +166,20 @@ margin: auto;
 }
 
  thead , tbody , th , td  {
-    border: 3px dotted #dda;
+    border: 3px dotted white;
     padding: 8px;
     width: 40%;
 }
 
  
- button:visited {
+ /* button:visited {
     color:#dda;
- }
+ } */
 
 .about-me-info {
     text-align: center;
+    margin: 20px 12px;
+    padding: 16px;
 
 }
 
@@ -208,8 +194,8 @@ margin: auto;
 }
 .container-skills {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto auto;
 }
 
 #icon-tech{
@@ -265,9 +251,9 @@ margin: 10px 0px;
 
 #visitors-message, #visitors-message-button , #visitors-email , #visitors-name {
     background-color: transparent;
-    color:#dda;
+    color:white;
     font-weight: bold;
-    border: 2px solid #dda;
+    border: 2px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -280,13 +266,13 @@ margin: 10px 0px;
 
 #visitors-message-button:hover, #visitors-message-button:focus {
     opacity: .7;
-    color:#dda;
-    border-color: #dda;
+    color:lightgray;
+    border-color: lightgray;
     cursor:pointer;
 }
 
 ::placeholder {
-    color: #dda;
+    color: white;
 }
 
 .mail-to {
@@ -294,7 +280,7 @@ margin: 10px 0px;
 }
 
 .call-me {
-    color: #dda;
+    color: lightgray;
 }
 
 .call-me:link {
@@ -303,15 +289,15 @@ margin: 10px 0px;
 
 .call-me:hover , .call-me:focus {
     opacity: .8;
-    text-decoration: underline dotted #dda;
+    text-decoration: underline dotted lightgrey;
 }
 
 .call-me:visited {
-    text-decoration: overline dashed #dda;
+    text-decoration: overline dashed lightgrey;
 }
 
 ::placeholder{
-color:#dda;
+color:white;
 }
 
 /* Work Page */
@@ -320,7 +306,7 @@ color:#dda;
  }
 
  .grid-container {
-    width: auto;
+    width: 90vw;
     gap: 2em;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -331,14 +317,15 @@ color:#dda;
 }
  
  .grid-item {
-    border: #dda radius 10px;
+    border: white radius 10px;
     border-style: dashed;
     border-width: 1px;
-    color:#dda;
+    color:white;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-self: center;
+    padding: 18px;
 }
 .project-title{
     justify-content: center;
@@ -363,18 +350,30 @@ color:#dda;
 
  /* Device Screen */
  
- @media screen and (max-width: 395px) {
+ @media screen and (max-width: 322px) {
 
 /* Index */
 #profile {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align:center;
+    margin: 40px 5px;
 }
 
+.portrait{
+    max-width: 90%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* About me */
+/* Work */
+/* Contact */
  }
 
- @media screen and (max-width: 530px) {
+ @media screen and (max-width: 376px) {
 
 /*Body*/
 body{
@@ -437,10 +436,10 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 100%;
+    width: 90%;
     align-content: center;
     justify-content: center;
-    margin: 5px;
+    margin: 40px 5px;
     text-indent: 2px; 
     line-height: 20px;
 }
@@ -474,12 +473,22 @@ font-size: 25px;
 }
 .about-me-info{
     text-align: center;
+
 }
 .about-me_pic {
-    border-radius: 30%;
+    border-radius: 40%;
     width: 250px;
     height: auto;
 }
+
+.container-skills{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 8px;
+    padding: 8px;
+}
+
  .img-Mexico {
     min-width: 45%;
     min-height: auto; 
@@ -512,7 +521,7 @@ font-size: 25px;
  }  
 }
 
-@media screen and (max-width: 465px) {
+@media screen and (max-width: 426px) {
     
 body{
         font-size: 18px;
@@ -587,7 +596,7 @@ body{
     text-align: center;
     align-content: justify;
     justify-content:justify;
-    margin: 5px 5px;
+    margin: 40px 5px;
     text-indent: 2px; 
     line-height: 20px;
 }
@@ -617,17 +626,34 @@ body{
     min-width: 50%;
     position: relative;
 }
+.about-me-info{
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
 .about-me_pic {
     border-radius: 50%;
     width: 250px;
     height: auto;
 }
- .img-Mexico {
-    min-width: 100%;
-    min-height: auto;
-    display:grid;
-    place-content: center;
-} 
+.container-skills{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 8px;
+    padding: 12px;
+}
+
+.table-grid{
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+}   
+
 
 /* Work page*/
 .grid-container {
@@ -647,7 +673,7 @@ body{
 }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
 
 /*Navigation-bar */
 h1 {
@@ -721,7 +747,7 @@ font-size: 30px;
     width: 95%;
     align-content: justify;
     justify-content:justify;
-    margin: 5px 5px;
+    margin: 40px 5px;
     text-indent: 2px; 
     line-height: 20px;
 }
@@ -790,6 +816,9 @@ font-size: 30px;
     .navigation-list li {
         font-size: 2rem;
     }
+/* About me */
+/* Work */
+
 }
 
 @keyframes mexico {
