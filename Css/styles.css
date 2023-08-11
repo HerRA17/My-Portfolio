@@ -171,11 +171,6 @@ margin: auto;
     width: 40%;
 }
 
- 
- /* button:visited {
-    color:#dda;
- } */
-
 .about-me-info {
     text-align: center;
     margin: 20px 12px;
@@ -589,9 +584,9 @@ body{
 
 /* Index page*/
 #profile {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows:auto;
+    display: flex !important;
+    flex-direction: column;
+    flex-wrap: nowrap;
     width: 95%;
     text-align: center;
     align-content: justify;
@@ -603,7 +598,7 @@ body{
 
 .portrait {
     display:inline-flex;
-    align-content:space-between;
+    align-content:center;
     max-width: 215px;
     min-width: 130px;
 }
