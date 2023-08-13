@@ -340,7 +340,7 @@ color:white;
     flex-flow: row wrap;
     align-content: center;
     justify-content: center;
-    text-decoration: underline dashed;
+    text-decoration: none;
 }
 
  /* Device Screen */
