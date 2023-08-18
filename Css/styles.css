@@ -19,8 +19,8 @@ h1 {
 }
 
 
-a {
-    color:lightgray;
+a, .a-CS {
+    color:lightgrey;
 }
 
 .grid {
@@ -244,7 +244,7 @@ margin: 10px 0px;
     margin: 10px 0px;
 }
 
-#visitors-message, #visitors-message-button , #visitors-email , #visitors-name {
+#visitors-message, #visitors-email , #visitors-name {
     background-color: transparent;
     color:white;
     font-weight: bold;
@@ -257,6 +257,12 @@ margin: 10px 0px;
 
 #visitors-message-button {
     margin: 10px 0px;
+    background-color: whitesmoke;
+    color: #007e77;
+    border: 2px solid;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 #visitors-message-button:hover, #visitors-message-button:focus {
@@ -274,25 +280,24 @@ margin: 10px 0px;
     text-decoration: none;
 }
 
-.call-me {
+.contact-info{
+    display: flex;
+    flex: auto;
+}
+
+.contact-details{
+    margin: 0px 10px;
+}
+
+#email-icon{
+    width: 50px;
+    height: 50px;
+}
+
+#phone-icon {
     color: lightgray;
-}
-
-.call-me:link {
-    text-decoration: none;
-}
-
-.call-me:hover , .call-me:focus {
-    opacity: .8;
-    text-decoration: underline dotted lightgrey;
-}
-
-.call-me:visited {
-    text-decoration: overline dashed lightgrey;
-}
-
-::placeholder{
-color:white;
+    width: 50px;
+    height: 50px;
 }
 
 /* Work Page */
@@ -341,6 +346,31 @@ color:white;
     align-content: center;
     justify-content: center;
     text-decoration: none;
+}
+
+/* Case Study */
+.body-CS{
+    background-color: #007e77;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height:30px;
+    margin-left: 15px;
+}
+
+.container-CS{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.header-CS{
+    margin: 15px 10px;
+}
+
+.p-CS{
+margin: 5px 10px;
 }
 
  /* Device Screen */
@@ -666,6 +696,19 @@ body{
     align-content: center;
     justify-content: center;
 }
+/* Contact */
+.contact-info {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+}
+#email-icon {
+    margin: 10px 0px;
+}
+.contact-details{
+    margin: 10px 0px;
+}
+
 }
 
 @media screen and (max-width: 768px) {
