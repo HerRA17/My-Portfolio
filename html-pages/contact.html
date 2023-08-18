@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" sizes="32x32" href="../dist/img/Hermann_Rasch.jpg">
+        <title> Contact Hermann</title>
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="stylesheet" href="../Css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <br><br>
+ <body>
+     <header class="page-header">
+        <nav class="main-navigation page-header_item"> 
+            <ul role="menubar" class="navigation-list"> 
+                <li role="menuitem"> 
+                    <a href="index.html" class="navigation-list_item">Home</a>
+                </li>
+                <li role="menuitem">
+                    <a href="about.html" class="navigation-list_item--active">About me</a>
+                </li>
+                <li role="menuitem">
+                    <a href="contact.html" class="navigation-list_item">Contact</a>
+                </li>
+                <li role="menuitem">
+                    <a href="work.html" class="navigation-list_item">Work</a>
+                </li>     
+            </ul>
+            <div class="Hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+     </header> 
+     <br><br>
+     <main>
+      <div id="form"> <!--Implementar una funcion de la página de Linkin-->
+        <p>You can say hi</p>
+        <form id="email-form">
+            <label for="visitors-email" >Email:</label>
+            <input id="visitors-email" type="email" name="email" placeholder="Your@mail" required><br><br>
+            <label for="visitors-name">Name:</label>
+            <input id="visitors-name" name="Fullname" placeholder="Your name..."><br><br>
+            <label for="visitors-message" >Message:</label>
+            <textarea id="visitors-message" maxlength="250" placeholder="Any thoughts"></textarea><br>
+            <input id="visitors-message-button" type="submit" value="Send message">
+        </form><br><br>
+        <div class="contact-info">
+            <img src="../dist/favicon/gmail.png" alt="email" id="email-icon">
+            <p class="contact-details">hermann.rasch93@gmail.com</p>
+            <img src="../dist/favicon/smartphone-call.png" alt="phone" id="phone-icon"> 
+            <p class="contact-details">+015259434892</p>
+        </div>
+      </div>
+    </main>
+    <br>
+    <footer class="page-footer"> 
+       <p>Find me on!</p>
+       <div class="social-media">
+            <a href="https://github.com/HerRA17">
+                <img class="github-icon" src="../dist/img/github-svgrepo-com.svg" alt="Github" width="42" height="auto">
+            </a>
+            <a href="https://www.linkedin.com/in/hermann-gustav-rasch-6118b1b9/">
+                <img class="linkedin-icon" src="../dist/img/linkedin-svgrepo-com.svg" alt="Linkedin" width="42" height="auto">
+            </a>
+        </div>
+        <a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Freepik - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/gmail" title="gmail icons">Gmail icons created by Pixel perfect - Flaticon</a>
+    </footer>
+    <!-- <script src="js/tota11y.min.js"></script> -->
+    <script src="../js/validation-form.js"></script>
+    <script src="../js/function.js"></script>
+</body>
+</html>
