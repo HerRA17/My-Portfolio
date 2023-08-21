@@ -375,178 +375,7 @@ margin: 5px 10px;
 
  /* Device Screen */
  
- @media screen and (max-width: 322px) {
-
-/* Index */
-#profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align:center;
-    margin: 40px 5px;
-}
-
-.portrait{
-    max-width: 90%;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    padding: 10px;
-}
-
-/* About me */
-/* Work */
-/* Contact */
- }
-
- @media screen and (max-width: 376px) {
-
-/*Body*/
-body{
-    font-size: 15px !important;
-    line-height: 20px !important;
-}    
-
- /*Navigation-bar */
- .page-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: normal; 
-    padding: 10px 5px;
-}
-
-.page-header_item {
-    border-radius: 20px;
-    flex: 0 0 200px;
-    margin-bottom: 10px;
-}
-
-.navigation-list {
-    display: grid;
-    list-style-type: none;
-    color:#f7f7cd;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    align-self: auto;
-    text-align: justify;
-}
-
-.navigation-list li  {
-    display: grid;
-    align-content: justify;
-    text-align: justify;
-    padding: 10px 0px;
-    font-weight: bold;
-    font-size: 1.25rem;
-}
-
-/* Footer */
-
-.social-media {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    justify-content: center;
-    text-align: center;
-    padding:10px 15px;
-    align-content: center;
-}
-.twitter-icon , .github-icon , .linkedin-icon {
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-}
-
- /*Index */
- #profile {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 90%;
-    align-content: center;
-    justify-content: center;
-    margin: 40px 5px;
-    text-indent: 2px; 
-    line-height: 20px;
-}
-
-.portrait {
-    min-width: 145px;
-    max-width: 160px!important;
-}
-
-
-.check-code {
-    color: #007e77;
-}
-
-h1 {
-font-size: 25px;
-}
-
-/*About me */
-
-.table {
-    margin: auto;
-}
-
-#img-Mexico {
-    margin: 0px auto;
-    min-width: 50%;
-    position: relative;
-   
-        
-}
-.about-me-info{
-    text-align: center;
-
-}
-.about-me_pic {
-    border-radius: 40%;
-    width: 250px;
-    height: auto;
-}
-
-.container-skills{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    margin: 8px;
-    padding: 8px;
-}
-
- .img-Mexico {
-    min-width: 45%;
-    min-height: auto; 
-    display:grid;
-    place-content: center;
-} 
-
-/*Contact */
-#form {
-    display: grid;
-    justify-content: center;
-}
-
- 
-/*Work */
- .grid-container {
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    margin:5px;
-    width: 90%;
-}
-
-  .link-Example {
-    display: flex;
-    flex-flow: row wrap;
-    align-content: center;
-    justify-content: center;
- }  
-}
-
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 425px) {
     
 body{
         font-size: 18px;
@@ -570,7 +399,6 @@ body{
 .navigation-list {
     display: grid;
     list-style-type: none;
-    color:#f7f7cd;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     align-self: auto;
@@ -621,7 +449,7 @@ body{
     text-align: center;
     align-content: justify;
     justify-content:justify;
-    margin: 40px 5px;
+    margin-top: 50px;
     text-indent: 2px; 
     line-height: 20px;
 }
@@ -629,13 +457,14 @@ body{
 .portrait {
     display:inline-flex;
     align-content:center;
-    max-width: 215px;
-    min-width: 130px;
+    max-width: 70vw;
+    min-width: auto;
 }
 
 .profile-text {
     display:inline-block;
     align-content: center;
+    max-width: 80vw;
 }
 
 .check-code {
@@ -846,25 +675,13 @@ font-size: 30px;
 }
 
 
-@media screen and (min-width: 2000px) {
+/* @media screen and (max-width: 2000px) {
     body {
         font-size: 30px;
         line-height: 25px;
     }
     .navigation-list li {
         font-size: 2rem;
-    }
+    } */
 /* About me */
 /* Work */
-
-}
-
-@keyframes mexico {
-0% {background-color: green;
-
-}
-50% {background-color:whitesmoke;
-}
-100% {background-color: red;
-}
-}
