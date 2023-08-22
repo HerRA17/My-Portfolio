@@ -102,10 +102,6 @@ display: grid;
 footer > p {
     align-content: center;
 }
-     
-.twitter-icon , .linkedin-icon , .github-icon  {
-    padding:0px 5px 0px 5px ;
-     }
 
 .page-footer{
     clear: both;
@@ -226,14 +222,7 @@ margin: 10px 0px;
     margin: 30px 0px;
 }
 
-#email-icon{
-    width: 50px;
-    height: 50px;
-    margin: 0px 20px;
-}
-
-#phone-icon {
-    color: lightgray;
+#email-icon, #phone-icon, .linkedin-icon , .github-icon{
     width: 50px;
     height: 50px;
     margin: 0px 20px;
