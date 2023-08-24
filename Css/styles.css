@@ -305,7 +305,55 @@ margin: 10px 0px;
 }
 
 .p-CS{
-margin: 5px 10px;
+    margin: 5px 10px;
+}
+.container-slides{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+        
+}
+.slide {
+    display: none;
+}
+.meet-imgs {
+    display: block;
+    margin: 0 auto;
+    max-width: 60vw;
+    max-width: 60vw;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width:auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next{
+    right:0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext{ 
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 92%;
+    left: 81%;
 }
 
  /* Device Screen */
