@@ -285,8 +285,8 @@ margin: 10px 0px;
 
 /* Case Study */
 .body-CS{
-    background-color: #007e77;
-    color: white;
+    background-color: white;
+    color: #121212;
     font-family: 'Kanit', sans-serif;
     font-weight: bold;
     font-size: 20px;
@@ -322,6 +322,10 @@ margin: 10px 0px;
     max-width: 60vw;
     max-width: 60vw;
 }
+.a-CS{
+    color: #191D88;
+    margin: 15px;
+}
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -330,7 +334,7 @@ margin: 10px 0px;
     width:auto;
     padding: 16px;
     margin-top: -50px;
-    color: white;
+    color: #121212;
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
