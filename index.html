@@ -23,7 +23,7 @@
                     <a href="#contact" class="navigation-list_item">Contact</a>
                 </li>
                 <li role="menuitem">
-                    <a href="#" class="navigation-list_item">Work</a>
+                    <a href="#work" class="navigation-list_item">Work</a>
                 </li>         
             </ul>
             <div class="Hamburger-menu" aria-label="Toggle Menu">
@@ -46,7 +46,7 @@
         <div class="profile-text">
          <br>
          <p class="text">My name is Hermann, I am mexican-german Full-Stack Developer.</p><br>
-         <a href="./My-Portfolio/html-pages/work.html" class="check-code"> Check out my code!</a>
+         <a href="#work" class="check-code"> Check out my code!</a>
         </div>
      </div>
      <br>
@@ -66,25 +66,31 @@
             <p class="my-skills">I am currently finishing my Full-Stack certification.</p>
                 <p class="my-skills"> My Skills:</p>
             <div class="container-skills">
-            <div>Front-End</div>
-            <div>
-                * Interfaces
-                * Responsive designs, modals, and touch interactions
-                * Web components
-                * Accesible websites/ -apps
-                * Progressive Web Applications
-                * Mobile Apps (React-Native, Expo, PWA)
-                * Test & Behavioral-Driven-Development
-                * Continous Integration / Delivery
-            </div>
-            <br>
-            <div>Back-End</div>
-            <div>
-                * NodeJS & express
-                * Creation & Integration of APIs 
-                * Implementation and integration of Web Services like FaaS, BaaS
-                * Relational & Non-Relational data bases
-            </div>
+                <table>
+                    <theaderr>Front-End </theader>
+                    <tr> 
+                        <ul>
+                            <li>Interfaces</li>
+                            <li>Responsive designs, modals, and touch interactions</li>
+                            <li>Web components</li>
+                            <li>Accesible websites/ -apps</li>
+                            <li>Progressive Web Applications</li>
+                            <li>Mobile Apps (React-Native, Expo, PWA)</li>
+                            <li>Test & Behavioral-Driven-Development</li>
+                            <li>Continous Integration / Delivery</li>
+                        </ul>
+                    </tr>
+                    <tr>Back-End</tr>
+                    <tr>
+                        <ul>
+                            <li>NodeJS & express</li>
+                            <li>Creation & Integration of APIs</li>
+                            <li>Implementation and integration of Web Services like FaaS, BaaS</li>
+                            <li>Relational & Non-Relational data bases</li>
+                        </ul>
+                    </tr>
+
+                </table>
             </div>
         </div>
         </div>
@@ -149,7 +155,7 @@
         <img src="./dist/img/MUC-rathaus.jpg" alt="Munich-rathaus" class="about-me_pic">
     </div>
 </div>
-    <h2 class="section-header">Work</h2>
+    <h2 class="section-header" id="work">Work</h2>
             <div class="grid-container"> 
             <div class="grid-item">
                 <h2 class="project-titel">Chat App</h2> 
@@ -175,7 +181,7 @@
                 to a list. User will have available a Userpage where he can see his information, edit & delete/deregister 
                 from the app.
                 </p>
-                <p class="project-p">I learned about Reacts implementation, practice some more fetching the data from the Database previously created based on the 
+                <p class="project-p">I learned about React implementation, practice some more fetching the data from the Database previously created based on the 
                     REST API.
                 </p> 
                 <br>
