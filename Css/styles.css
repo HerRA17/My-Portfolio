@@ -47,7 +47,7 @@ display: grid;
     justify-content: space-evenly;
     justify-items: start;
     list-style-type: none;
-    color:lightgray;
+    color:white;
 }
 
 .navigation-list li  {
@@ -142,18 +142,34 @@ footer > p {
     max-width: 215px; 
     height: auto;    
 }
-
+.button-check-code {
+    background-color: white;
+    border-radius: 2%;
+    border: none;
+}
 .check-code {
     display: flex;
     flex-flow: row wrap;
     align-content: center;
     justify-content: center;
-    color: lightgrey;
+    color:#007e77;
+    font-weight: bold;
     text-decoration: none;
     margin-bottom: 5px;
 }
 
 /* About Page */
+
+#about {
+    text-align:center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    right: 20px;
+    left: 20px;
+    bottom: 10px;
+}
 
 #container-about-me{
     background-color: white;
@@ -202,8 +218,12 @@ footer > p {
 .table-grid-container {
     background-color: #007e77;
     color: white;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.table-grid-strech {
+    flex: 1;
 }
 
 .table-grid{
@@ -237,12 +257,15 @@ margin: 10px 0px;
 }
 
 /* Work Page */
- .section-header {
+ #work {
     text-align:center;
     font-size: 3rem;
     font-weight: bold;
     margin-top: 10%;
     margin-bottom: 10%;
+    right: 20px;
+    left: 20px;
+    bottom: 10px;
  }
 
  .grid-container {
@@ -469,11 +492,6 @@ body{
     max-width: 80vw;
 }
 
-.check-code {
-    display:inline-block;
-    align-content: center;
-    color: lightgray;
-}
 
 /* About me*/
 #img-Mexico {
@@ -637,12 +655,6 @@ font-size: 30px;
 .profile-text {
     display:inline-block;
     align-content: center;
-}
-
-.check-code {
-    display:inline-block;
-    align-content: center;
-    color: lightgray;
 }
 
 /* About me*/
