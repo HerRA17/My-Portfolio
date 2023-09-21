@@ -407,6 +407,10 @@ body{
         line-height: 30px;
 }
 
+.h1{
+    margin-top: 45px;
+}
+
 /*Navigation-bar */
 .page-header {
     display: grid;
