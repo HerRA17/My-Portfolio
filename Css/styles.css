@@ -1,7 +1,9 @@
 * {
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body { 
     background-color: #007e77;
     color: white;
@@ -176,22 +178,28 @@ footer > p {
     color: #007e77;
     padding: 5px 50px;
     width: auto;
+    text-align: center;
 }
 
 
 .about-me-info, .more-about-me {
     text-align: center;
+    justify-content: center;
     margin: 20px 12px;
     padding: 16px;
-    width: 80vw;
     height: auto;
 
+}
+.p-about{
+    text-align: center;
+    width: 90%;
+    height: auto;
 }
 
 .about-me_pic {
     border-radius: 15%;
-    width: 70vw;
-    height: 75vw;
+    width: 70%;
+    height: 75%;
 }
 
 .my-skills {
@@ -202,6 +210,7 @@ footer > p {
     display: grid;
     grid-template-columns: auto ;
     grid-template-rows: auto auto auto auto;
+    justify-items: center;
 }
 
 #icon-tech{
@@ -269,7 +278,6 @@ margin: 10px 0px;
  }
 
  .grid-container {
-    width: 95vw;
     gap: 2em;
     display:flex;
     flex-flow: row wrap;
