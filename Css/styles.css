@@ -490,18 +490,12 @@ body{
 #profile {
     display: flex !important;
     flex-direction: column;
-    flex-wrap: nowrap;
-    width: 95%;
     text-align: center;
-    align-content: justify;
-    justify-content:justify;
-    margin-top: 50px;
-    text-indent: 2px; 
-    line-height: 20px;
+    align-items: center;
+    justify-content:center;
+
 }
-.p-about {
-    margin: auto !important;
-}
+
 .portrait {
     display:inline-flex !important;
     align-content:center !important;
@@ -515,6 +509,10 @@ body{
     max-width: 80vw;
 }
 
+.text {
+    text-align: center;
+    justify-content: center;
+}
 
 /* About me*/
 #img-Mexico {
@@ -523,6 +521,11 @@ body{
     min-width: 50%;
     position: relative;
 }
+
+.p-about {
+    margin: auto !important;
+}
+
 .about-me-info{
     width: 100%;
     align-items: center;
