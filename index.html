@@ -20,13 +20,13 @@
                     <a href="#container-about-me" class="navigation-list_item">About me</a>
                 </li>
                 <li role="menuitem">
-                    <a href="#contact" class="navigation-list_item">Contact</a>
+                    <a href="#work" class="navigation-list_item">Work</a>
                 </li>
                 <li role="menuitem">
-                    <a href="#work" class="navigation-list_item">Work</a>
+                    <a href="#contact" class="navigation-list_item">Contact</a>
                 </li>         
             </ul>
-            <div class="Hamburger-menu" aria-label="Toggle Menu">
+            <div class="Hamburger-menu" aria-label="Toggle Menu" tabindex="0">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -53,7 +53,7 @@
      </div>
      <br>
      <div id="container-about-me">
-        <h2 id="about">About</h2>
+        <h2 id="about">About me</h2>
         <div >
             <div class="about-me-info">
                 <p class="p-about">Greetings, I'm Hermann, an enthusiastic junior Full-Stack Developer. My roots trace back to Mexico City, 
@@ -65,12 +65,14 @@
             </div>
         <br><br>
         <div class="skills-container">
-            <p class="my-skills">I am currently finishing my Full-Stack certification.</p>
-                <p class="my-skills"> My Skills:</p>
+            <h3 class="my-skills"> My Skills:</h3>
             <div class="container-skills">
                 <table>
-                    <theaderr>Front-End </theader>
-                    <tr> 
+                    <tr>
+                        <th class="skills">Front-End </th>
+                    </tr>
+                    <tr>
+                        <td> 
                         <ul>
                             <li>Interfaces</li>
                             <li>Responsive designs, modals, and touch interactions</li>
@@ -81,17 +83,21 @@
                             <li>Test & Behavioral-Driven-Development</li>
                             <li>Continous Integration / Delivery</li>
                         </ul>
+                    </td>
                     </tr>
-                    <tr>Back-End</tr>
                     <tr>
+                        <th class="skills">Back-End</th>
+                    </tr>
+                    <tr>
+                        <td>
                         <ul>
                             <li>NodeJS & express</li>
                             <li>Creation & Integration of APIs</li>
                             <li>Implementation and integration of Web Services like FaaS, BaaS</li>
                             <li>Relational & Non-Relational data bases</li>
                         </ul>
+                    </td>
                     </tr>
-
                 </table>
             </div>
         </div>
@@ -102,16 +108,16 @@
         <h3 class="tech-stack"> Tech Stack</h3>
         <div class="table-grid">
             <div>
-                <img src="./dist/Tech-stack img/html-5-logo.png" id="icon-tech" alt="Tech-stack">
+                <img src="./dist/Tech-stack img/html-5-logo.png" id="icon-tech-backg" alt="Tech-stack">
             </div>
             <div>
-                <img src="./dist/Tech-stack img/css-3.png" id="icon-tech" alt="Tech-stack">
+                <img src="./dist/Tech-stack img/css-3.png" id="icon-tech-backg" alt="Tech-stack">
             </div>
             <div>
-                <img src="./dist/Tech-stack img/java-script.png" id="icon-tech" alt="Tech-stack">
+                <img src="./dist/Tech-stack img/js.png" id="icon-tech-backg" alt="Tech-stack">
             </div>
             <div>
-                <img src="./dist/Tech-stack img/bootstrap.png" id="icon-tech" alt="Tech-stack">
+                <img src="./dist/Tech-stack img/bootstrap.png" id="icon-tech-backg" alt="Tech-stack">
             </div>
             <div>
                 <img src="./dist/Tech-stack img/jquery.png" id="icon-tech" alt="Tech-stack"> 
@@ -172,9 +178,9 @@
                     which allows the data and conversation to be stored and implement anonymously authentication. Use of expo (open-source framework) for native Android and iOS.
                 </p>
                 <br>
-                <img src="./dist/Work portraits/Caht-app_demo.PNG" id="work-img">
-                <br>
-                <a href="https://github.com/HerRA17/Chat-App" class="link-Example">Chat App</a>
+                <a href="https://github.com/HerRA17/Chat-App" class="link-Example">
+                    <img src="./dist/Work portraits/Caht-app_demo.PNG" id="work-img">
+                </a>
             </div>
 
             <div class="grid-item" id="movies-couch">
@@ -188,12 +194,9 @@
                 <p class="project-p">I learned about React implementation as a SPA, practice fetching the data from the Database
                     previously created based on the REST API, and implementation of routing, parcel as its build tool.
                 </p> 
-                <br>
-                <img src="./dist/Work portraits/Movies-couch.png" id="work-img">
-                <br>
-                <a href="https://github.com/HerRA17/movies-couch_client" class="link-Example">Movies-Couch_client</a>
-                <br>
-                <a href="https://github.com/HerRA17/movies-couch_api" class="link-Example">Movies-Couch API</a>
+                <a href="https://github.com/HerRA17/movies-couch_client" class="link-Example">
+                    <img src="./dist/Work portraits/Movies-couch.png" id="work-img">
+                </a>
             </div>
 
             <div class="grid-item" id="meet">
@@ -206,11 +209,15 @@
                     For more details go ahead and click the link below: 
                 </p>
                 <br>
-                <img src="./dist/Work portraits/Meet.png" id="work-img">
+                
                 <br>
-                <a href="https://herra17.github.io/meet" class="link-Example">meet</a>
+                <a href="https://herra17.github.io/meet" class="link-Example">
+                    <img src="./dist/Work portraits/Meet.png" id="work-img">
+                </a>
                 <br>
-                <a href="./case-studies/case-study_meet.html" class="link-Example">Case Study</a>
+                <a href="./case-studies/case-study_meet.html" class="link-Example">
+                    <h3>Case Study</h3>
+                </a>
             </div>
             
             <div class="grid-item">
@@ -225,11 +232,25 @@
                     REST API. 
                 </p>
                 <br>
-                <img src="./dist/Work portraits/angular-preview.png" id="work-img">
+                <a href="https://github.com/HerRA17/moviesCouch-Angular-client" class="link-Example">
+                    <img src="./dist/Work portraits/angular-preview.png" id="work-img">    
+                </a>
                 <br>
-                <a href="https://github.com/HerRA17/moviesCouch-Angular-client" class="link-Example">Movies-Couch Angular</a>
+            </div>
+
+            <div class="grid-item">
+                <h2 class="project-titel">Movies Couch API</h2> 
+                <p class="project-p"> The Server component of a Movies Couch application. The web application will provide users with access to information about
+                     different movies, directors, and genres. Users will be able to sign up, update their personal information, and create a list of their
+                     favorite movies.
+                </p>
+                <p class="project-p">I learned how to create an API with Node.js and Express, implementing http-authentication,
+                     and JWT/Token-based authentication utilizing bycrypt, passport-local, and passport-jwt. The database was set up with MongoDB.
+                </p>
                 <br>
-                <a href="https://github.com/HerRA17/movies-couch_api" class="link-Example">Movies-Couch API</a>
+                <a href="https://github.com/HerRA17/movies-couch_api" class="link-Example">
+                    <img src="./dist/Work portraits/Movies-Couch_API.png" id="work-img"> 
+                </a>
             </div>
 
             <div class="grid-item" id="pokedex">
@@ -242,9 +263,9 @@
                     as well Web Hosting.
                 </p>
                 <br>
-                <img src="./dist/Work portraits/pokedeks_preview.png" id="work-img">
-                <br>
-                <a href="https://herra17.github.io/Pokedex_App/" class="link-Example">Pokédex</a>
+                <a href="https://herra17.github.io/Pokedex_App/" class="link-Example">
+                    <img src="./dist/Work portraits/pokedeks_preview.png" id="work-img">
+                </a>
             </div>
 
             <div class="grid-item" id="to-do-list">
@@ -253,33 +274,34 @@
                     I learned about JQuery DOM traversal, manipulation, event handling, and Ajax.
                 </p>
                 <br>
-                <img src="./dist/Work portraits/Todo-list_preview.png" id="work-img">
-                <br>
-                <a href="https://herra17.github.io/to-do-list-app/" class="link-Example">To do list</a>
+                <a href="https://herra17.github.io/to-do-list-app/" class="link-Example">
+                    <img src="./dist/Work portraits/Todo-list_preview.png" id="work-img">
+                </aa>
             </div>
         </div>
     </main>
     <br><br>
     <footer class="page-footer"> 
-        <p>Reach out</p>
-        <div class="contact-info" id="contact">
-            <img src="./dist/favicon/gmail.png" alt="email" id="email-icon">
-            <p class="contact-details">hermann.rasch93@gmail.com</p>
-            <img src="./dist/favicon/smartphone-call.png" alt="phone" id="phone-icon"> 
-            <p class="contact-details">+015209504022</p>
+        <div>
+            <h2 id="Contact">Contact</h2>
+            <div class="contact-info" id="contact">
+                <img src="./dist/favicon/gmail.png" alt="email" id="email-icon">
+                <p class="contact-details">hermann.rasch93@gmail.com</p>
+                <img src="./dist/favicon/smartphone-call.png" alt="phone" id="phone-icon"> 
+                <p class="contact-details">+015209504022</p>
+            </div>
+            <p class="find-me">Find me on!</p>
         </div>
-        <p>Find me on!</p>
+        
         <div class="social-media"> 
-            <a href="https://github.com/HerRA17">
+            <a href="https://github.com/HerRA17" class="anchor-media">
                 <img class="github-icon" src="./dist/img/github-svgrepo-com.svg" alt="Github" >
             </a>
-            <a href="https://www.linkedin.com/in/hermann-gustav-rasch-6118b1b9/">
+            <a href="https://www.linkedin.com/in/hermann-gustav-rasch-6118b1b9/" class="anchor-media">
                 <img class="linkedin-icon" src="./dist/img/linkedin-svgrepo-com.svg" alt="Linkedin" >
             </a>
         </div>
         <div class="credit">
-            <a href="https://www.flaticon.com/free-icons/java" title="java icons">Java icons created by Pixel perfect - Flaticon</a>
-            <br>
             <a href="https://www.flaticon.com/free-icons/css-3" title="css 3 icons">Css 3, Bootstrap, React icons created by Freepik - Flaticon</a>
             <br>
             <a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Freepik - Flaticon</a>
