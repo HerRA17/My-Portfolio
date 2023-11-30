@@ -149,7 +149,7 @@ footer > p {
     max-width: 215px; 
     height: auto;    
 }
-.button-check-code {
+.button-check-code, .button-cv {
     background-color: white;
     border-radius: 2%;
     border: none;
@@ -163,6 +163,11 @@ footer > p {
     font-weight: bold;
     text-decoration: none;
     margin-bottom: 5px;
+}
+.cv-icon {
+    color: #007e77;
+    width: 40px;
+    height: auto;
 }
 
 /* About Page */
@@ -744,8 +749,19 @@ font-size: 30px;
 }
 
 .profile-text {
-    display:inline-block;
-    align-content: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-check-code{
+    width: 200px;
+    height: auto;
+}
+
+.button-cv{
+    width: 50px;
+    height: auto;
 }
 
 /* About me*/
