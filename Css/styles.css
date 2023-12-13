@@ -341,11 +341,9 @@ margin: 10px 0px;
 }
  
  .grid-item {
-    border: white radius 10px;
-    border-radius: 1%;
-    border-style: dashed;
-    border-width: 1px;
-    color:white;
+    background-color: white;
+    color:#007e77;
+    border-radius: 2.5%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -374,6 +372,7 @@ margin: 10px 0px;
     align-content: center;
     justify-content: center;
     text-decoration: none;
+    color: #007e77;
 }
 
 /* Case Study */
@@ -464,7 +463,14 @@ margin: 10px 0px;
 }
 
  /* Device Screen */
- 
+
+ @media screen and (max-width: 376px) {
+    /* Work page*/
+    .grid-item {
+        border-radius: 0;
+    }
+ } 
+
 @media screen and (max-width: 426px) {
     
 body{
@@ -584,9 +590,8 @@ body{
 
 .about-me-info{
     width: 100%;
-    align-items: center;
     text-align: center;
-    justify-content: center;
+    padding: 10px;
 }
 .about-me_pic {
     border-radius: 20%;
@@ -607,9 +612,17 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
-    padding: 8px;
+h3 {
+    font-weight: bold;
+}
+
+th {
     text-align: center !important;
+}
+
+th, td {
+    padding: 2px;
+    text-align: justify;
     }
 
 li {
@@ -765,6 +778,11 @@ font-size: 30px;
 }
 
 /* About me*/
+
+.p-about{
+    padding-bottom: 35px;
+    margin-left: 25px;
+}
 
 .container-skills{
     display: grid;
