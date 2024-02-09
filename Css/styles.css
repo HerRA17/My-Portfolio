@@ -376,9 +376,8 @@ margin: 10px 0px;
     align-self: center;
 }
 
- .link-Example {
+.link-Example {
     display: inherit;
-    flex-flow: row wrap;
     align-content: center;
     justify-content: center;
     text-decoration: none;
